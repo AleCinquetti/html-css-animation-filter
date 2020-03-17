@@ -1,43 +1,138 @@
+/* 1 */
 .ex-1-square {
     width: 100px;
     height: 100px;
     border: 1px solid red;
+    transition: 2s;
 }
+
+.ex-1-square:hover {
+    background: red;
+}
+
+/* 2 */
 .ex-2-square {
     width: 100px;
     height: 100px;
     background: red;
+    transition: 2s;
 }
+
+.ex-2-square:active {
+    width: 100%;
+}
+
+/* 3 */
 .ex-3-square {
     width: 100px;
     height: 100px;
     background: red;
+    transition: 2s;
 }
+
+.ex-3-square:hover {
+    border-radius: 50%;
+}
+
+/* 4 */
 .ex-4-square {
     width: 100px;
     height: 100px;
     background: red;
+    transition: 2s;
 }
+
+.ex-4-square:hover {
+    opacity: 0;
+}
+
+/* 5 */
 .ex-5-square {
     margin: 20px;
     width: 60px;
     height: 60px;
     background: red;
+    transition: 2s;
 }
+
+.ex-5-square:hover {
+    transform: scale(2);
+}
+
+.ex-5-square:active {
+    transform: scale(0.5);
+}
+
+/* 6-7-8 */
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
 }
 
+/* 6 */
+.ex-6-img:hover {
+    filter: grayscale(1);
+}
+
+/* 7 */
+.ex-7-img {
+    transition: 2s;
+}
+
+.ex-7-img:hover {
+    filter: grayscale(0.5) sepia(0.4);
+}
+
+/* 8 */
+.ex-8-img {
+    transition: 2s;
+}
+
+.ex-8-img:hover {
+    filter: grayscale(0.5) sepia(0.4);
+    border-radius: 25px;
+}
+
+/* 9 */
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: 2s;
 }
+
+.ex-9-img:hover {
+    filter: grayscale(0.5) sepia(0.4);
+    border-radius: 25px;
+    transform: scale(1.5);
+}
+
+/* 10 */
 .ex-10-icon {
     font-size: 60px;
+    animation: girandola infinite linear 2s;
 }
+
+@keyframes girandola {
+    0%{transform: rotate(0);}
+    50%{transform: rotate(-180deg);}
+    100%{transform: rotate(-360deg);}
+}
+
+/* 11 */
 .ex-11-icon {
     font-size: 60px;
 }
+
+.ex-11-icon:hover {
+    animation: trequarti linear 2s;
+}
+
+@keyframes trequarti {
+    0%{transform: rotate(0);}
+    75%{transform: rotate(270deg);}
+}
+
+
+/* 12-13 */
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
